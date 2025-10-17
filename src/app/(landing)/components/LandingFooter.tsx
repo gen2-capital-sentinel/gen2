@@ -29,7 +29,7 @@ export function LandingFooter() {
           <div className="grid gap-12 md:grid-cols-12">
             <div className="md:col-span-3">
               <Logo />
-              <p className="mt-4 text-sm text-muted-foreground">
+              <p className="mt-4 text-xs text-muted-foreground">
                 The future of wealth is intelligent.
               </p>
             </div>
@@ -39,7 +39,7 @@ export function LandingFooter() {
                 <ul className="mt-4 space-y-2">
                   {footerLinks.platform.map(link => (
                     <li key={link.name}>
-                      <Link href={link.href} className="text-sm text-muted-foreground hover:text-foreground">
+                      <Link href={link.href} className="text-xs text-muted-foreground hover:text-foreground">
                         {link.name}
                       </Link>
                     </li>
@@ -51,7 +51,7 @@ export function LandingFooter() {
                 <ul className="mt-4 space-y-2">
                   {footerLinks.company.map(link => (
                     <li key={link.name}>
-                      <Link href={link.href} className="text-sm text-muted-foreground hover:text-foreground">
+                      <Link href={link.href} className="text-xs text-muted-foreground hover:text-foreground">
                         {link.name}
                       </Link>
                     </li>
@@ -63,7 +63,7 @@ export function LandingFooter() {
                 <ul className="mt-4 space-y-2">
                   {footerLinks.legal.map(link => (
                     <li key={link.name}>
-                      <Link href={link.href} className="text-sm text-muted-foreground hover:text-foreground">
+                      <Link href={link.href} className="text-xs text-muted-foreground hover:text-foreground">
                         {link.name}
                       </Link>
                     </li>
