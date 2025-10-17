@@ -30,8 +30,8 @@ export function LandingFooter() {
   ]
 
   return (
-    <footer className="text-[hsl(206_28%_95%)]">
-      <div className="bg-[hsl(204_38%_10%)]">
+    <footer className="text-foreground">
+      <div className="bg-background">
         <div className="container mx-auto px-4 py-12">
           <div className="grid gap-12 md:grid-cols-12">
             <div className="md:col-span-3">
@@ -81,7 +81,7 @@ export function LandingFooter() {
           </div>
         </div>
       </div>
-      <div className="bg-background py-8 text-center text-sm text-muted-foreground">
+      <div className="bg-secondary py-8 text-center text-sm text-muted-foreground">
         <div className="container mx-auto px-4">
             <p>&copy; {new Date().getFullYear()} Gen2 Wealth. All rights reserved.</p>
         </div>
