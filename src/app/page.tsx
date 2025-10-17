@@ -96,7 +96,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="features" className="py-16 bg-secondary md:py-24">
+        <section id="features" className="py-16 bg-background md:py-24">
           <div className="container mx-auto px-4">
             <div className="mx-auto max-w-3xl text-center">
               <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
@@ -108,7 +108,7 @@ export default function Home() {
             </div>
             <div className="mt-12 grid gap-8 md:grid-cols-3">
               {features.map((feature, index) => (
-                <Card key={index} className="flex flex-col text-center bg-background">
+                <Card key={index} className="flex flex-col text-center bg-card">
                   <CardContent className="flex flex-1 flex-col items-center justify-center p-6">
                     {feature.icon}
                     <h3 className="mt-4 text-xl font-semibold">{feature.title}</h3>
@@ -120,7 +120,7 @@ export default function Home() {
           </div>
         </section>
         
-        <section id="how-it-works" className="py-16 md:py-24 bg-background">
+        <section id="how-it-works" className="py-16 md:py-24 bg-secondary">
           <div className="container mx-auto px-4">
             <div className="mx-auto mb-12 max-w-3xl text-center">
               <h2 className="text-3xl font-bold tracking-tight md:text-4xl">How It Works</h2>
@@ -130,9 +130,9 @@ export default function Home() {
             </div>
             <div className="grid gap-8 md:grid-cols-3">
               {howItWorks.map((item, index) => (
-                <Card key={item.step} className="relative flex flex-col items-center overflow-hidden text-center bg-secondary/50">
+                <Card key={item.step} className="relative flex flex-col items-center overflow-hidden text-center bg-background">
                    <CardContent className="flex flex-col items-center p-8">
-                    <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-background shadow-md">
+                    <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-card shadow-md">
                         {item.icon}
                     </div>
                     <h3 className="mt-2 text-xl font-semibold">{item.title}</h3>
@@ -147,7 +147,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="benefits" className="py-16 md:py-24 bg-secondary">
+        <section id="benefits" className="py-16 md:py-24 bg-background">
           <div className="container mx-auto grid items-center gap-12 px-4 md:grid-cols-2">
             <div>
               <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
@@ -168,7 +168,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="about" className="py-16 md:py-24 bg-background">
+        <section id="about" className="py-16 md:py-24 bg-secondary">
           <div className="container mx-auto px-4">
             <div className="mx-auto max-w-3xl text-center">
               <h2 className="text-3xl font-bold tracking-tight md:text-4xl">

@@ -35,7 +35,7 @@ export function LandingFooter() {
             </div>
             <div className="grid grid-cols-2 gap-8 md:col-span-9 md:grid-cols-3">
               <div>
-                <h3 className="font-semibold">Platform</h3>
+                <h3 className="font-semibold text-foreground/90">Platform</h3>
                 <ul className="mt-4 space-y-2">
                   {footerLinks.platform.map(link => (
                     <li key={link.name}>
@@ -47,7 +47,7 @@ export function LandingFooter() {
                 </ul>
               </div>
               <div>
-                <h3 className="font-semibold">Company</h3>
+                <h3 className="font-semibold text-foreground/90">Company</h3>
                 <ul className="mt-4 space-y-2">
                   {footerLinks.company.map(link => (
                     <li key={link.name}>
@@ -59,7 +59,7 @@ export function LandingFooter() {
                 </ul>
               </div>
               <div>
-                <h3 className="font-semibold">Legal</h3>
+                <h3 className="font-semibold text-foreground/90">Legal</h3>
                 <ul className="mt-4 space-y-2">
                   {footerLinks.legal.map(link => (
                     <li key={link.name}>
@@ -72,7 +72,7 @@ export function LandingFooter() {
               </div>
             </div>
           </div>
-          <div className="mt-12 border-t pt-8">
+          <div className="mt-12 border-t border-border pt-8">
             <div className="text-xs text-muted-foreground space-y-4">
               <p>
                 <span className="font-semibold">IMPORTANT NOTICE:</span> Information transmitted in this email communication is intended solely for the person or entity to which it is addresses and contains confidential and privileged material. Any review, re-transmission, dissemination or other unauthorised use of material contained within this email , included taking action in reliance upon the material is prohibited by the sender. The material contained within this email are exclusively the views and opinions of the sender, and are not endorsed or known to the Employer. Nothing within with email constitutes financial advice, mortgage advice and it does not contain any legal advice. You are strongly urged to obtain professional advice before taking any actions in relation to the materials provided. None of the material contained within this email is an offer for investment, and no part of it constitutes an offer of investment or forms any sort of contract between the sender and the recipient. Gen2Wealth cannot guarantee the integrity of this email, which may contain viruses. The value of investments can go up as well as down. Your money is at risk.
