@@ -28,7 +28,7 @@ export function LandingHeader() {
           <Logo />
         </Link>
         <nav className="flex items-center gap-4">
-           <Button variant="ghost" asChild className={cn(isScrolled ? "text-foreground" : "text-white hover:bg-white/10 hover:text-white")}>
+           <Button variant="ghost" asChild className={cn(isScrolled ? "text-foreground" : "text-foreground hover:bg-white/20")}>
             <Link href="/login">Sign In</Link>
           </Button>
           <Button asChild>
