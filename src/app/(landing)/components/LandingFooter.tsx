@@ -23,13 +23,13 @@ export function LandingFooter() {
   };
 
   return (
-    <footer className="text-foreground">
-      <div className="bg-background">
+    <footer className="bg-background text-foreground">
+      <div className="bg-secondary/50">
         <div className="container mx-auto px-4 py-12">
           <div className="grid gap-12 md:grid-cols-12">
             <div className="md:col-span-3">
               <Logo />
-              <p className="mt-4 text-xs text-muted-foreground">
+              <p className="mt-4 text-sm text-muted-foreground">
                 The future of wealth is intelligent.
               </p>
             </div>
