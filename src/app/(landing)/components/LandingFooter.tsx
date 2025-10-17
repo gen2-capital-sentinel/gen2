@@ -10,7 +10,7 @@ export function LandingFooter() {
       { name: 'Security', href: '#' },
     ],
     company: [
-      { name: 'About Us', href: '#' },
+      { name: 'About Us', href: '#about-us' },
       { name: 'Careers', href: '#' },
       { name: 'Press', href: '#' },
       { name: 'Contact', href: '#' },
@@ -21,13 +21,6 @@ export function LandingFooter() {
       { name: 'Cookie Policy', href: '#' },
     ],
   };
-
-  const socialLinks = [
-    // Placeholder for social icons
-    { name: 'Facebook', href: '#', icon: 'FB' },
-    { name: 'Twitter', href: '#', icon: 'TW' },
-    { name: 'LinkedIn', href: '#', icon: 'LI' },
-  ]
 
   return (
     <footer className="text-foreground">
@@ -77,6 +70,16 @@ export function LandingFooter() {
                   ))}
                 </ul>
               </div>
+            </div>
+          </div>
+          <div className="mt-12 border-t pt-8">
+            <div className="text-xs text-muted-foreground space-y-4">
+              <p>
+                <span className="font-semibold">IMPORTANT NOTICE:</span> Information transmitted in this email communication is intended solely for the person or entity to which it is addresses and contains confidential and privileged material. Any review, re-transmission, dissemination or other unauthorised use of material contained within this email , included taking action in reliance upon the material is prohibited by the sender. The material contained within this email are exclusively the views and opinions of the sender, and are not endorsed or known to the Employer. Nothing within with email constitutes financial advice, mortgage advice and it does not contain any legal advice. You are strongly urged to obtain professional advice before taking any actions in relation to the materials provided. None of the material contained within this email is an offer for investment, and no part of it constitutes an offer of investment or forms any sort of contract between the sender and the recipient. Gen2Wealth cannot guarantee the integrity of this email, which may contain viruses. The value of investments can go up as well as down. Your money is at risk.
+              </p>
+              <p>
+                Gen2Wealth® MANAGEMENT a trading name of Premier Independent Investments UK Limited (PIIUK), part of the Strategic Value Group, registered in England and Wales at Companies House with registration number 03339739 whose registered offices are at C23G, The Print Rooms, Holly Farm Business Park, Honiley, Kenilworth, Warwickshire, England, CV81NP. Fully authorised and regulated by the Financial Conduct Authority (FCA) with Firm Reference Number (FRN): 186697.
+              </p>
             </div>
           </div>
         </div>

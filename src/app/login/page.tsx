@@ -2,7 +2,7 @@
 
 import { useFormState, useFormStatus } from 'react-dom';
 import Link from 'next/link';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { signInWithEmail, signInWithGoogle } from '@/app/actions/auth';
 import { Button } from '@/components/ui/button';
@@ -34,6 +34,39 @@ function SubmitButton() {
   );
 }
 
+function GoogleSignInButton() {
+  const [pending, setPending] = useState(false);
+  const { toast } = useToast();
+  const router = useRouter();
+
+  const handleGoogleSignIn = async () => {
+    setPending(true);
+    const result = await signInWithGoogle();
+     if (result.message && !result.success) {
+      toast({
+        variant: 'destructive',
+        title: 'Uh oh! Something went wrong.',
+        description: result.message,
+      });
+      setPending(false);
+    }
+    if (result.success) {
+      toast({
+        title: 'Success!',
+        description: 'You are now signed in with Google.',
+      });
+      router.replace('/dashboard');
+    }
+  }
+
+  return (
+    <Button variant="outline" className="w-full" onClick={handleGoogleSignIn} disabled={pending}>
+      {pending ? <Loader2 className="mr-2 animate-spin" /> : <GoogleIcon />}
+      Google
+    </Button>
+  );
+}
+
 export default function LoginPage() {
   const [state, formAction] = useFormState(signInWithEmail, { message: '', success: false });
   const { toast } = useToast();
@@ -55,25 +88,6 @@ export default function LoginPage() {
       router.replace('/dashboard');
     }
   }, [state, toast, router]);
-  
-  const handleGoogleSignIn = async () => {
-    const result = await signInWithGoogle();
-     if (result.message && !result.success) {
-      toast({
-        variant: 'destructive',
-        title: 'Uh oh! Something went wrong.',
-        description: result.message,
-      });
-    }
-    if (result.success) {
-      toast({
-        title: 'Success!',
-        description: 'You are now signed in with Google.',
-      });
-      router.replace('/dashboard');
-    }
-  }
-
 
   return (
     <div className="flex min-h-screen w-full items-center justify-center p-4 bg-secondary">
@@ -105,10 +119,7 @@ export default function LoginPage() {
               <span className="bg-card px-2 text-muted-foreground">Or continue with</span>
             </div>
           </div>
-          <Button variant="outline" className="w-full" onClick={handleGoogleSignIn}>
-            <GoogleIcon />
-            Google
-          </Button>
+          <GoogleSignInButton />
         </CardContent>
         <CardFooter className="justify-center">
           <p className="text-sm text-muted-foreground">

@@ -43,13 +43,13 @@ export function LandingHeader() {
         </Link>
         <nav className="hidden md:flex items-center gap-6">
            {navLinks.map((link) => (
-             <Link key={link.name} href={link.href} className={cn("text-sm font-medium transition-colors", isScrolled ? "text-foreground hover:text-primary" : "text-white/80 hover:text-primary")}>
+             <Link key={link.name} href={link.href} className="text-sm font-medium text-white/80 transition-colors hover:text-primary">
                 {link.name}
              </Link>
            ))}
         </nav>
         <div className="hidden md:flex items-center gap-4">
-           <Button variant="ghost" asChild className={cn(isScrolled ? "text-foreground hover:text-primary" : "text-white/80 hover:text-primary hover:bg-white/10")}>
+           <Button variant="ghost" asChild className="text-white/80 hover:text-primary hover:bg-white/10">
             <Link href="/login">Sign In</Link>
           </Button>
           <Button asChild>
@@ -59,7 +59,7 @@ export function LandingHeader() {
         <div className="md:hidden">
             <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="icon" className={cn(isScrolled ? "text-foreground" : "text-white/80 hover:text-primary hover:bg-white/10")}>
+                <Button variant="ghost" size="icon" className="text-white/80 hover:text-primary hover:bg-white/10">
                   <Menu className="h-6 w-6" />
                   <span className="sr-only">Open menu</span>
                 </Button>
