@@ -118,7 +118,7 @@ export default function Home() {
               </p>
             </div>
             <div className="grid gap-8 md:grid-cols-3">
-              {howItWorks.map((item) => (
+              {howItWorks.map((item, index) => (
                 <Card key={item.step} className="relative flex flex-col items-center overflow-hidden text-center bg-secondary/50">
                    <CardContent className="flex flex-col items-center p-8">
                     <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-background shadow-md">
@@ -136,7 +136,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="benefits" className="py-16 md:py-24">
+        <section id="benefits" className="py-16 md:py-24 bg-secondary">
           <div className="container mx-auto grid items-center gap-12 px-4 md:grid-cols-2">
             <div>
               <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
