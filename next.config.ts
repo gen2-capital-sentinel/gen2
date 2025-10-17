@@ -33,6 +33,12 @@ const nextConfig: NextConfig = {
         hostname: 'cdn.prod.website-files.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'pub-11134a6be96f479ebe08254c1e1fa2f6.r2.dev',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
