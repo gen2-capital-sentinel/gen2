@@ -163,9 +163,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="cta" className="relative text-primary-foreground py-16 md:py-24 text-center overflow-hidden">
+        <section id="cta" className="relative text-white py-16 md:py-24 text-center overflow-hidden">
            <div
-            className="absolute inset-0 bg-cover bg-center brightness-50"
+            className="absolute inset-0 bg-cover bg-center brightness-75"
             style={{ 
               backgroundImage: "url('https://pub-11134a6be96f479ebe08254c1e1fa2f6.r2.dev/Homepage_Section_Background.png')",
               transform: 'scale(1.1)' 
@@ -176,7 +176,7 @@ export default function Home() {
              <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
               Ready to build your legacy?
             </h2>
-            <p className="mt-4 text-lg opacity-80">
+            <p className="mt-4 text-lg text-white/90">
               Join Gen2 Wealth today and take the first step towards a smarter financial future.
             </p>
             <Button asChild size="lg" variant="secondary" className="mt-8">
