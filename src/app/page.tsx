@@ -6,6 +6,7 @@ import { LandingHeader } from './(landing)/components/LandingHeader';
 import { LandingFooter } from './(landing)/components/LandingFooter';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { DisclaimerModal } from './(landing)/components/DisclaimerModal';
 
 export default function Home() {
   const features = [
@@ -71,6 +72,7 @@ export default function Home() {
 
   return (
     <div className="flex min-h-screen flex-col bg-background">
+      <DisclaimerModal />
       <LandingHeader />
       <main className="flex-1">
         <section className="relative flex h-[80vh] min-h-[600px] items-center justify-center text-center text-white">
@@ -166,7 +168,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="about-us" className="py-16 md:py-24 bg-background">
+        <section id="about" className="py-16 md:py-24 bg-background">
           <div className="container mx-auto px-4">
             <div className="mx-auto max-w-3xl text-center">
               <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
