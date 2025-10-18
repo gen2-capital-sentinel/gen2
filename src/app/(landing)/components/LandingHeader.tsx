@@ -26,9 +26,9 @@ export function LandingHeader() {
   }, []);
 
   const navLinks = [
-    { name: 'Features', href: '#features' },
-    { name: 'How It Works', href: '#how-it-works' },
-    { name: 'Benefits', href: '#benefits' },
+    { name: 'For Individuals', href: '#features' },
+    { name: 'For Businesses', href: '#how-it-works' },
+    { name: 'For Advisors', href: '#benefits' },
     { name: 'About', href: '#about' },
   ];
 
