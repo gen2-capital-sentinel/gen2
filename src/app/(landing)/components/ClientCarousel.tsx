@@ -39,9 +39,9 @@ const clientTypes = [
 
 export function ClientCarousel() {
   return (
-    <section id="client-types" className="relative py-16 md:py-24 bg-background overflow-hidden">
+    <section id="how-it-works" className="relative py-16 md:py-24 bg-background overflow-hidden">
         <div
-            className="absolute inset-0 bg-cover bg-center brightness-50"
+            className="absolute inset-0 bg-cover bg-center"
             style={{ 
                 backgroundImage: "url('https://pub-11134a6be96f479ebe08254c1e1fa2f6.r2.dev/tomasz-smal-_HJNQCoXVkU-unsplash.jpg')",
                 opacity: 0.1,
