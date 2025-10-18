@@ -216,7 +216,7 @@ export default function Home() {
             <p className="mt-4 text-lg text-white/90">
               Join Gen2 Wealth today and take the first step towards a smarter financial future.
             </p>
-            <Button asChild size="lg" variant="secondary" className="mt-8">
+            <Button asChild size="lg" className="mt-8">
               <Link href="/signup">
                 Create Account
               </Link>
