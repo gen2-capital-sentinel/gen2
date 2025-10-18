@@ -70,7 +70,7 @@ export default function Home() {
             </p>
             <Button asChild size="lg" className="mt-8">
               <Link href="/signup">
-                Get Started <ArrowRight className="ml-2 h-5 w-5" />
+                Open an Account <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
           </div>

@@ -100,7 +100,7 @@ export default function SignupPage() {
                <Link href="/"><Logo /></Link>
             </div>
             <CardTitle>Create an Account</CardTitle>
-            <CardDescription>Enter your details to get started</CardDescription>
+            <CardDescription>Enter your details to open an account</CardDescription>
           </CardHeader>
           <CardContent>
             <form action={formAction} className="space-y-4">
