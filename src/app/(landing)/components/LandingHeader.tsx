@@ -32,16 +32,10 @@ export function LandingHeader() {
     { name: 'About', href: '#about' },
   ];
 
-  const linkClassName = cn(
-    "text-sm font-medium transition-colors hover:text-primary",
-    isScrolled ? "text-foreground/80" : "text-white/80"
-  );
+  const linkClassName = "text-sm font-medium text-foreground/80 transition-colors hover:text-primary";
 
   return (
-    <header className={cn(
-      "sticky top-0 z-50 w-full transition-colors duration-300",
-      isScrolled ? "bg-background/80 backdrop-blur-sm border-b" : "bg-transparent"
-    )}>
+    <header className="sticky top-0 z-50 w-full bg-secondary/50 border-b">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link href="/">
           <Logo />
@@ -54,7 +48,7 @@ export function LandingHeader() {
            ))}
         </nav>
         <div className="hidden md:flex items-center gap-4">
-           <Button variant="ghost" asChild className={cn(linkClassName, "hover:bg-white/10")}>
+           <Button variant="ghost" asChild className={linkClassName}>
             <Link href="/login">Sign In</Link>
           </Button>
           <Button asChild>
@@ -64,7 +58,7 @@ export function LandingHeader() {
         <div className="md:hidden">
             <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="icon" className={cn("hover:bg-white/10", linkClassName)}>
+                <Button variant="ghost" size="icon" className={cn("hover:bg-accent", linkClassName)}>
                   <Menu className="h-6 w-6" />
                   <span className="sr-only">Open menu</span>
                 </Button>
