@@ -10,7 +10,7 @@ export function LandingFooter() {
       { name: 'Security', href: '#' },
     ],
     company: [
-      { name: 'About Us', href: '#about-us' },
+      { name: 'About Us', href: '#about' },
       { name: 'Careers', href: '#' },
       { name: 'Press', href: '#' },
       { name: 'Contact', href: '#' },
@@ -75,10 +75,16 @@ export function LandingFooter() {
           <div className="mt-12 border-t border-border pt-8">
             <div className="text-xs text-muted-foreground space-y-4">
               <p>
-                <span className="font-semibold">IMPORTANT NOTICE:</span> Information transmitted in this email communication is intended solely for the person or entity to which it is addresses and contains confidential and privileged material. Any review, re-transmission, dissemination or other unauthorised use of material contained within this email , included taking action in reliance upon the material is prohibited by the sender. The material contained within this email are exclusively the views and opinions of the sender, and are not endorsed or known to the Employer. Nothing within with email constitutes financial advice, mortgage advice and it does not contain any legal advice. You are strongly urged to obtain professional advice before taking any actions in relation to the materials provided. None of the material contained within this email is an offer for investment, and no part of it constitutes an offer of investment or forms any sort of contract between the sender and the recipient. Gen2Wealth cannot guarantee the integrity of this email, which may contain viruses. The value of investments can go up as well as down. Your money is at risk.
+                Gen2Wealth® Management, a trading name of Premier Independent Investments UK Limited (PIIUK), is part of the Strategic Value Group. Registered in England and Wales (No. 03339739) with registered offices at C23G, The Print Rooms, Holly Farm Business Park, Honiley, Kenilworth, Warwickshire, CV8 1NP.
               </p>
               <p>
-                Gen2Wealth® MANAGEMENT a trading name of Premier Independent Investments UK Limited (PIIUK), part of the Strategic Value Group, registered in England and Wales at Companies House with registration number 03339739 whose registered offices are at C23G, The Print Rooms, Holly Farm Business Park, Honiley, Kenilworth, Warwickshire, England, CV81NP. Fully authorised and regulated by the Financial Conduct Authority (FCA) with Firm Reference Number (FRN): 186697.
+                We are fully authorised and regulated by the Financial Conduct Authority (FCA) (FRN: 186697).
+              </p>
+              <p>
+                The content on this site is for informational purposes only and does not constitute financial, mortgage, or legal advice, nor an offer to invest. Investment values can rise and fall, and your capital is at risk. We strongly recommend seeking professional advice before making financial decisions.
+              </p>
+              <p>
+                While we take care to maintain security, Gen2Wealth® cannot guarantee the integrity of communications and cannot accept liability for viruses or other technical issues.
               </p>
             </div>
           </div>
