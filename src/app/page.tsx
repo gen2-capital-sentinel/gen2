@@ -12,17 +12,17 @@ import { ClientCarousel } from './(landing)/components/ClientCarousel';
 export default function Home() {
   const features = [
     {
-      icon: <Bot className="h-8 w-8 text-accent" />,
+      icon: <Bot className="h-8 w-8 text-primary" />,
       title: 'AI-Powered Insights',
       description: 'Leverage cutting-edge AI to get personalized investment advice and market analysis.',
     },
     {
-      icon: <BarChart className="h-8 w-8 text-accent" />,
+      icon: <BarChart className="h-8 w-8 text-primary" />,
       title: 'Automated Portfolio Management',
       description: 'Our smart algorithms automatically rebalance your portfolio to maximize returns and minimize risk.',
     },
     {
-      icon: <Shield className="h-8 w-8 text-accent" />,
+      icon: <Shield className="h-8 w-8 text-primary" />,
       title: 'Bank-Level Security',
       description: 'Your assets and data are protected with state-of-the-art encryption and security protocols.',
     },
