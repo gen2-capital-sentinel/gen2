@@ -5,6 +5,7 @@ import { ClientCarousel } from './components/ClientCarousel';
 import { Hero } from './components/Hero';
 import { About } from './components/About';
 import { Features } from './components/Features';
+import { Contact } from './components/Contact';
 
 export default function LandingPage() {
   return (
@@ -13,8 +14,10 @@ export default function LandingPage() {
       <main>
         <Hero />
         <About />
-        <Features />
         <ClientCarousel />
+        <div className="py-8 bg-gray-800" />
+        <Features />
+        <Contact />
       </main>
       <LandingFooter />
       <DisclaimerModal />
