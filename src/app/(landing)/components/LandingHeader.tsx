@@ -69,6 +69,9 @@ export function LandingHeader() {
                 ))}
               </DropdownMenuContent>
            </DropdownMenu>
+           <Link href="#" className={linkClassName}>
+                For Advisors
+             </Link>
         </nav>
         <div className="hidden md:flex items-center gap-4">
            <Button variant="ghost" asChild className={linkClassName}>
@@ -105,6 +108,9 @@ export function LandingHeader() {
                                 </Link>
                             ))}
                         </div>
+                        <Link href="#" onClick={() => setMobileMenuOpen(false)} className="text-lg font-medium text-foreground hover:text-primary">
+                            For Advisors
+                        </Link>
 
                     </nav>
                     <div className="mt-auto flex flex-col gap-4">
