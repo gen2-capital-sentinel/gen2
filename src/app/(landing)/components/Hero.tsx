@@ -18,14 +18,14 @@ export function Hero() {
             style={{ objectFit: 'cover' }}
             priority
             data-ai-hint={heroImage.imageHint}
-            className="filter brightness-110"
+            className="filter brightness-110 blur-sm"
             />
         )}
         <div className="absolute inset-0 bg-black/50" />
       </div>
       <div className="relative z-10 mx-auto max-w-3xl px-4">
         <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
-          The Future of <span className="text-primary">Wealth</span> is <span className="text-primary">Intelligent</span>
+          The Future of <span className="text-primary">Wealth</span> is Intelligent
         </h1>
         <p className="mt-6 text-lg leading-8 text-gray-300">
           Harness the power of AI to build and manage your wealth.
