@@ -55,7 +55,7 @@ function GoogleSignInButton() {
         title: 'Success!',
         description: 'You are now signed in with Google.',
       });
-      router.replace('/dashboard');
+      router.replace('/gen2-capital');
     }
   }
 
@@ -85,7 +85,7 @@ export default function LoginPage() {
         title: 'Success!',
         description: 'You are now signed in.',
       });
-      router.replace('/dashboard');
+      router.replace('/gen2-capital');
     }
   }, [state, toast, router]);
 

@@ -56,7 +56,7 @@ function GoogleSignInButton() {
         title: 'Success!',
         description: 'Your account has been created.',
       });
-      router.replace('/dashboard');
+      router.replace('/gen2-capital');
     }
   }
 
@@ -87,7 +87,7 @@ export default function SignupPage() {
         title: 'Success!',
         description: 'Your account has been created.',
       });
-      router.replace('/dashboard');
+      router.replace('/gen2-capital');
     }
   }, [state, toast, router]);
   
