@@ -33,7 +33,7 @@ export function Features() {
           alt={backgroundImage.description}
           fill
           style={{ objectFit: 'cover' }}
-          className="absolute inset-0 blur-md"
+          className="absolute inset-0"
           data-ai-hint={backgroundImage.imageHint}
         />
       )}
@@ -41,19 +41,19 @@ export function Features() {
       <div className="container relative z-10 mx-auto px-4">
         <div className="mx-auto mb-12 max-w-3xl text-center">
           <h2 className="text-3xl font-bold tracking-tight md:text-4xl text-foreground">A Smarter Way to Invest</h2>
-          <p className="mt-4 text-lg text-muted-foreground">
+          <p className="mt-4 text-lg text-muted-foreground font-bold">
             Our platform combines cutting-edge technology with proven financial strategies to give you an edge.
           </p>
         </div>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {features.map((feature, index) => (
-            <Card key={index} className="text-center bg-white/30 backdrop-blur-lg border-white/30 text-foreground">
+            <Card key={index} className="text-center">
               <CardHeader className="items-center">
-                 <div className="mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-white/30 shadow-md">
+                 <div className="mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-secondary shadow-md">
                     {feature.icon}
                 </div>
                 <CardTitle>{feature.title}</CardTitle>
-                <CardDescription className="text-muted-foreground">{feature.description}</CardDescription>
+                <CardDescription>{feature.description}</CardDescription>
               </CardHeader>
             </Card>
           ))}
